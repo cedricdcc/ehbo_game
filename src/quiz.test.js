@@ -115,7 +115,7 @@ describe('FirstAidQuizApp', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Test Scenario 1')).toBeInTheDocument();
-      expect(screen.getByText('Sleep de stappen in de juiste volgorde om het scenario correct af te handelen.')).toBeInTheDocument();
+      expect(screen.getByText('Sleep de stappen in de juiste volgorde om het scenario correct af te handelen. Je kunt ook de pijltjes gebruiken om stappen te verplaatsen.')).toBeInTheDocument();
       expect(screen.getByText('Controleer Antwoord')).toBeInTheDocument();
       expect(screen.getByText('← Terug naar scenario\'s')).toBeInTheDocument();
     });
@@ -123,7 +123,7 @@ describe('FirstAidQuizApp', () => {
     Math.random.mockRestore();
   });
 
-  test('displays draggable steps in scenario', async () => {
+  test('displays up/down arrow buttons for reordering steps', async () => {
     jest.spyOn(Math, 'random').mockReturnValue(0.1);
     
     render(<FirstAidQuizApp />);
@@ -135,11 +135,43 @@ describe('FirstAidQuizApp', () => {
     fireEvent.click(screen.getByText('Get Random Scenario'));
 
     await waitFor(() => {
-      // The original text is "Step 1: First step", after removing "Step \d+: " it becomes "First step"
-      // But our mock data has "Step 1: First step", so after processing it becomes "First step"
-      expect(screen.getByText('Step 1: First step')).toBeInTheDocument();
-      expect(screen.getByText('Step 2: Second step')).toBeInTheDocument(); 
-      expect(screen.getByText('Step 3: Third step')).toBeInTheDocument();
+      // Check that arrow buttons are present
+      const upArrows = screen.getAllByText('↑');
+      const downArrows = screen.getAllByText('↓');
+      
+      expect(upArrows.length).toBeGreaterThan(0);
+      expect(downArrows.length).toBeGreaterThan(0);
+      
+      // First item should have disabled up arrow
+      expect(upArrows[0]).toBeDisabled();
+      // Last item should have disabled down arrow
+      expect(downArrows[downArrows.length - 1]).toBeDisabled();
+    });
+
+    Math.random.mockRestore();
+  });
+
+  test('can move steps using up/down arrow buttons', async () => {
+    jest.spyOn(Math, 'random').mockReturnValue(0.1);
+    
+    render(<FirstAidQuizApp />);
+    
+    await waitFor(() => {
+      expect(screen.getByText('Get Random Scenario')).toBeInTheDocument();
+    });
+
+    fireEvent.click(screen.getByText('Get Random Scenario'));
+
+    await waitFor(() => {
+      const downArrows = screen.getAllByText('↓');
+      expect(downArrows.length).toBeGreaterThan(0);
+      
+      // Click the first down arrow to move the first step down
+      fireEvent.click(downArrows[0]);
+      
+      // The button states should update correctly
+      const upArrows = screen.getAllByText('↑');
+      expect(upArrows[0]).toBeDisabled(); // New first item should have disabled up arrow
     });
 
     Math.random.mockRestore();

@@ -53,6 +53,24 @@ const FirstAidQuizApp = () => {
     setSelectedScenario(null);
   };
 
+  const moveStepUp = (index) => {
+    if (index === 0) return; // Can't move first item up
+    const newSteps = [...selectedScenario.steps];
+    const temp = newSteps[index];
+    newSteps[index] = newSteps[index - 1];
+    newSteps[index - 1] = temp;
+    setSelectedScenario({ ...selectedScenario, steps: newSteps });
+  };
+
+  const moveStepDown = (index) => {
+    if (index === selectedScenario.steps.length - 1) return; // Can't move last item down
+    const newSteps = [...selectedScenario.steps];
+    const temp = newSteps[index];
+    newSteps[index] = newSteps[index + 1];
+    newSteps[index + 1] = temp;
+    setSelectedScenario({ ...selectedScenario, steps: newSteps });
+  };
+
   const checkAnswer = () => {
     // Check if steps are in correct order
     const isCorrect = selectedScenario.steps.every(
@@ -167,7 +185,7 @@ const FirstAidQuizApp = () => {
     <div className="p-6 max-w-4xl mx-auto bg-white rounded-2xl shadow-lg">
       <h2 className="text-xl font-bold mb-4">{selectedScenario.scenario}</h2>
       <p className="text-sm text-gray-600 mb-4">
-        Sleep de stappen in de juiste volgorde om het scenario correct af te handelen.
+        Sleep de stappen in de juiste volgorde om het scenario correct af te handelen. Je kunt ook de pijltjes gebruiken om stappen te verplaatsen.
       </p>
       <DragDropContext
         onDragEnd={(result) => {
@@ -194,10 +212,40 @@ const FirstAidQuizApp = () => {
                     <div
                       ref={provided.innerRef}
                       {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className="mb-2 p-3 bg-gray-100 rounded shadow cursor-move hover:bg-gray-200 transition-colors"
+                      className="mb-2 bg-gray-100 rounded shadow transition-colors flex items-center gap-2"
                     >
-                      <span className="text-sm font-medium">{step.text}</span>
+                      <div className="flex flex-col gap-1 p-2">
+                        <button
+                          onClick={() => moveStepUp(index)}
+                          disabled={index === 0}
+                          className={`w-6 h-6 flex items-center justify-center rounded text-xs font-bold transition-colors ${
+                            index === 0 
+                              ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
+                              : 'bg-blue-500 text-white hover:bg-blue-600 cursor-pointer'
+                          }`}
+                          title="Move up"
+                        >
+                          ↑
+                        </button>
+                        <button
+                          onClick={() => moveStepDown(index)}
+                          disabled={index === selectedScenario.steps.length - 1}
+                          className={`w-6 h-6 flex items-center justify-center rounded text-xs font-bold transition-colors ${
+                            index === selectedScenario.steps.length - 1
+                              ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
+                              : 'bg-blue-500 text-white hover:bg-blue-600 cursor-pointer'
+                          }`}
+                          title="Move down"
+                        >
+                          ↓
+                        </button>
+                      </div>
+                      <div 
+                        {...provided.dragHandleProps}
+                        className="flex-1 p-3 cursor-move hover:bg-gray-200 transition-colors rounded"
+                      >
+                        <span className="text-sm font-medium">{step.text}</span>
+                      </div>
                     </div>
                   )}
                 </Draggable>
