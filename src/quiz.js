@@ -9,8 +9,8 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 const FirstAidQuizApp = () => {
   const [quizzes, setQuizzes] = useState([]);
   const [selectedScenario, setSelectedScenario] = useState(null);
-  const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState(false);
+  const [scenarioScores, setScenarioScores] = useState({});
+  const [showScores, setShowScores] = useState(false);
 
   useEffect(() => {
     // Load quiz data from JSON file in public folder
@@ -18,6 +18,16 @@ const FirstAidQuizApp = () => {
       .then((res) => res.json())
       .then((data) => setQuizzes(data))
       .catch((err) => console.error("Error loading quiz data:", err));
+
+    // Load saved scores from localStorage
+    const savedScores = localStorage.getItem("ehbo-scenario-scores");
+    if (savedScores) {
+      try {
+        setScenarioScores(JSON.parse(savedScores));
+      } catch (error) {
+        console.error("Error loading saved scores:", error);
+      }
+    }
   }, []);
 
   const handleSelectScenario = () => {
@@ -26,57 +36,101 @@ const FirstAidQuizApp = () => {
       .sort(() => Math.random() - 0.5)
       .map((step, index) => ({
         ...step,
-        id: `${randomScenario.scenario}-${index}`
-          .replace(/[^a-zA-Z0-9]/g, "_") // Replace special characters with underscores
-          .toLowerCase(), // Ensure consistent formatting
+        id: `step-${step.id}`, // Use original step id with consistent prefix
+        draggableId: `step-${step.id}`, // Use same ID for both key and draggableId
         text: step.text.replace(/Stap \d+: /, ""),
+        originalIndex: step.id - 1, // Store original order for scoring (0-based)
       }));
     console.log("Selected Scenario:", randomScenario);
     console.log("Shuffled Steps with IDs:", shuffledSteps);
     setSelectedScenario({
       ...randomScenario,
-      steps: shuffledSteps.map((step, index) => ({ ...step, order: index })),
+      steps: shuffledSteps,
     });
-    setAnswers({});
-    setSubmitted(false);
-  };
-
-  const handleChange = (id, value) => {
-    setAnswers({ ...answers, [id]: value });
-  };
-
-  const handleSubmit = () => {
-    setSubmitted(true);
   };
 
   const handleBack = () => {
     setSelectedScenario(null);
-    setSubmitted(false);
-    setAnswers({});
   };
 
-  const exportResults = () => {
-    const rows = Object.keys(answers).map((id) => {
-      const step = selectedScenario.steps.find((s) => s.id === parseInt(id));
-      return {
-        Scenario: selectedScenario.scenario,
-        Step: step.text,
-        Answer: answers[id] ? "Ja" : "Nee",
-        Correct: step.correct ? "Ja" : "Nee",
-      };
-    });
-    const csv =
-      "Scenario,Step,Answer,Correct\n" +
-      rows
-        .map((r) => `${r.Scenario},"${r.Step}",${r.Answer},${r.Correct}`)
-        .join("\n");
-    const blob = new Blob([csv], { type: "text/csv" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "quiz_results.csv";
-    a.click();
-    URL.revokeObjectURL(url);
+  const checkAnswer = () => {
+    // Check if steps are in correct order
+    const isCorrect = selectedScenario.steps.every(
+      (step, index) => step.originalIndex === index
+    );
+    
+    const scenarioKey = selectedScenario.scenario;
+    const newScores = { ...scenarioScores };
+    
+    if (!newScores[scenarioKey]) {
+      newScores[scenarioKey] = { attempts: 0, correct: 0 };
+    }
+    
+    newScores[scenarioKey].attempts += 1;
+    if (isCorrect) {
+      newScores[scenarioKey].correct += 1;
+    }
+    
+    setScenarioScores(newScores);
+    
+    // Save to localStorage
+    localStorage.setItem("ehbo-scenario-scores", JSON.stringify(newScores));
+    
+    alert(
+      isCorrect
+        ? `Goed gedaan! De volgorde is correct. Score: ${newScores[scenarioKey].correct}/${newScores[scenarioKey].attempts}`
+        : `De volgorde is niet correct. Probeer het opnieuw. Score: ${newScores[scenarioKey].correct}/${newScores[scenarioKey].attempts}`
+    );
+  };
+
+  const ScoreGraph = () => {
+    const totalAttempts = Object.values(scenarioScores).reduce((sum, score) => sum + score.attempts, 0);
+    const totalCorrect = Object.values(scenarioScores).reduce((sum, score) => sum + score.correct, 0);
+    const overallPercentage = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+
+    return (
+      <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+        <h3 className="text-lg font-bold mb-4">Scenario Scores</h3>
+        <div className="mb-4 p-3 bg-white rounded shadow">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-blue-600">{overallPercentage}%</div>
+            <div className="text-sm text-gray-600">Overall Success Rate</div>
+            <div className="text-xs text-gray-500">{totalCorrect}/{totalAttempts} correct</div>
+          </div>
+        </div>
+        
+        <div className="space-y-2 max-h-60 overflow-y-auto">
+          {Object.entries(scenarioScores).map(([scenario, score]) => {
+            const percentage = score.attempts > 0 ? Math.round((score.correct / score.attempts) * 100) : 0;
+            return (
+              <div key={scenario} className="bg-white p-2 rounded shadow">
+                <div className="flex justify-between items-center mb-1">
+                  <div className="text-sm font-medium truncate flex-1 mr-2">
+                    {scenario.length > 40 ? `${scenario.substring(0, 40)}...` : scenario}
+                  </div>
+                  <div className="text-sm font-bold text-blue-600">{percentage}%</div>
+                </div>
+                <div className="flex items-center">
+                  <div className="flex-1 bg-gray-200 rounded-full h-2">
+                    <div 
+                      className="bg-blue-500 h-2 rounded-full" 
+                      style={{ width: `${percentage}%` }}
+                    ></div>
+                  </div>
+                  <div className="text-xs text-gray-500 ml-2">{score.correct}/{score.attempts}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        
+        {Object.keys(scenarioScores).length === 0 && (
+          <div className="text-center text-gray-500 py-4">
+            No scenarios completed yet. Complete some scenarios to see your progress!
+          </div>
+        )}
+      </div>
+    );
   };
 
   if (!quizzes.length) {
@@ -85,24 +139,36 @@ const FirstAidQuizApp = () => {
 
   if (!selectedScenario) {
     return (
-      <div className="p-6 max-w-2xl mx-auto">
+      <div className="p-6 max-w-4xl mx-auto">
         <h1 className="text-2xl font-bold mb-4">Eerste Hulp Quiz</h1>
         <p className="mb-4">
           Klik op de knop hieronder om een willekeurig scenario te starten:
         </p>
-        <button
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
-          onClick={handleSelectScenario}
-        >
-          Get Random Scenario
-        </button>
+        <div className="flex gap-4 mb-4">
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
+            onClick={handleSelectScenario}
+          >
+            Get Random Scenario
+          </button>
+          <button
+            className="px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600"
+            onClick={() => setShowScores(!showScores)}
+          >
+            {showScores ? 'Hide Scores' : 'Show Scores'}
+          </button>
+        </div>
+        {showScores && <ScoreGraph />}
       </div>
     );
   }
 
   return (
-    <div className="p-6 max-w-2xl mx-auto bg-white rounded-2xl shadow-lg">
+    <div className="p-6 max-w-4xl mx-auto bg-white rounded-2xl shadow-lg">
       <h2 className="text-xl font-bold mb-4">{selectedScenario.scenario}</h2>
+      <p className="text-sm text-gray-600 mb-4">
+        Sleep de stappen in de juiste volgorde om het scenario correct af te handelen.
+      </p>
       <DragDropContext
         onDragEnd={(result) => {
           console.log("Drag result:", result);
@@ -129,9 +195,9 @@ const FirstAidQuizApp = () => {
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
-                      className="mb-2 p-2 bg-gray-100 rounded shadow"
+                      className="mb-2 p-3 bg-gray-100 rounded shadow cursor-move hover:bg-gray-200 transition-colors"
                     >
-                      <span>{step.text}</span>
+                      <span className="text-sm font-medium">{step.text}</span>
                     </div>
                   )}
                 </Draggable>
@@ -142,28 +208,21 @@ const FirstAidQuizApp = () => {
         </Droppable>
       </DragDropContext>
 
-      <button
-        onClick={() => {
-          const isCorrect = selectedScenario.steps.every(
-            (step, index) => step.order === index
-          );
-          alert(
-            isCorrect
-              ? "Goed gedaan! De volgorde is correct."
-              : "De volgorde is niet correct. Probeer het opnieuw."
-          );
-        }}
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow"
-      >
-        Controleer Antwoord
-      </button>
+      <div className="flex gap-4 mt-6">
+        <button
+          onClick={checkAnswer}
+          className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
+        >
+          Controleer Antwoord
+        </button>
 
-      <button
-        onClick={handleBack}
-        className="mt-6 px-4 py-2 bg-gray-400 text-white rounded-lg"
-      >
-        ← Terug naar scenario's
-      </button>
+        <button
+          onClick={handleBack}
+          className="px-4 py-2 bg-gray-400 text-white rounded-lg hover:bg-gray-500"
+        >
+          ← Terug naar scenario's
+        </button>
+      </div>
     </div>
   );
 };
