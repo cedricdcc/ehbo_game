@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ehbo_game/static/css/main.1022a662.css",
-    "main.js": "/ehbo_game/static/js/main.8c38f808.js",
+    "main.js": "/ehbo_game/static/js/main.6bc56990.js",
     "static/js/453.66491068.chunk.js": "/ehbo_game/static/js/453.66491068.chunk.js",
     "index.html": "/ehbo_game/index.html",
     "main.1022a662.css.map": "/ehbo_game/static/css/main.1022a662.css.map",
-    "main.8c38f808.js.map": "/ehbo_game/static/js/main.8c38f808.js.map",
+    "main.6bc56990.js.map": "/ehbo_game/static/js/main.6bc56990.js.map",
     "453.66491068.chunk.js.map": "/ehbo_game/static/js/453.66491068.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1022a662.css",
-    "static/js/main.8c38f808.js"
+    "static/js/main.6bc56990.js"
   ]
 }
