@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.03f7ca79.css",
-    "main.js": "/static/js/main.fa100b17.js",
-    "static/js/453.66491068.chunk.js": "/static/js/453.66491068.chunk.js",
-    "index.html": "/index.html",
-    "main.03f7ca79.css.map": "/static/css/main.03f7ca79.css.map",
-    "main.fa100b17.js.map": "/static/js/main.fa100b17.js.map",
-    "453.66491068.chunk.js.map": "/static/js/453.66491068.chunk.js.map"
+    "main.css": "/ehbo_game/static/css/main.03f7ca79.css",
+    "main.js": "/ehbo_game/static/js/main.6170f2e3.js",
+    "static/js/453.66491068.chunk.js": "/ehbo_game/static/js/453.66491068.chunk.js",
+    "index.html": "/ehbo_game/index.html",
+    "main.03f7ca79.css.map": "/ehbo_game/static/css/main.03f7ca79.css.map",
+    "main.6170f2e3.js.map": "/ehbo_game/static/js/main.6170f2e3.js.map",
+    "453.66491068.chunk.js.map": "/ehbo_game/static/js/453.66491068.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03f7ca79.css",
-    "static/js/main.fa100b17.js"
+    "static/js/main.6170f2e3.js"
   ]
 }
