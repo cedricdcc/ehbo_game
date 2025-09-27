@@ -1,0 +1,2027 @@
+[
+  {
+    "scenario": "1. Benadering van een slachtoffer met een (GEDEELTELIJKE) AMPUTATIE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "2. Benadering van een slachtoffer met een (volledige) AMPUTATIE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "3. Benadering van een slachtoffer met een ANAFYLACTISCHE SHOCK",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "4. Benadering van een slachtoffer met een BEROERTE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "FAST-test *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer rusten en geen inspanningen meer verrichten.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Geeft het slachtoffer geen eten of drinken.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "5. Benadering van een BEWUSTELOOS slachtoffer met NORMALE ADEMHA-",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg. Kantelt het hoofd achterover en tilt de kin omhoog. Controleert de ademhaling. Kijkt,",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Stabiele",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "6. Benadering van een BEWUSTELOOS slachtoffer dat NIET NORMAAL ADEMT",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg. Kantelt het hoofd achterover en tilt de kin omhoog. Controleert de ademhaling. Kijkt,",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat iemand een AED halen.",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Borst-",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat de borstkas volledig terugveren na elke compressie. Houdt steeds contact met",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Geeft 30 borstcompressies aan een frequentie van 100-120x/min.",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "text": "Beademingen",
+        "correct": true
+      },
+      {
+        "id": 11,
+        "text": "beademingen.",
+        "correct": true
+      },
+      {
+        "id": 12,
+        "text": "Defibrilleren",
+        "correct": true
+      },
+      {
+        "id": 13,
+        "text": "Opent de verpakking en kleeft de twee elektroden op de ontblote borstkas zoals aan-",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "7. Benadering van een BEWUSTELOOS KIND dat NIET NORMAAL ADEMT",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg. Kantelt het hoofd achterover en tilt de kin omhoog.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Geeft 5 initiële beademingen en alarmeert de Noodcentrale 112 wanneer hij alleen is, of laat iemand de",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat iemand een AED halen.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Initiële",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "beademingen",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "text": "Opent de luchtweg. Kantelt het hoofd achterover en tilt de kin omhoog.",
+        "correct": true
+      },
+      {
+        "id": 11,
+        "text": "Geeft in totaal 5 initiële beademingen: Haalt normaal adem en plaatst de mond volle-",
+        "correct": true
+      },
+      {
+        "id": 12,
+        "text": "Borst-",
+        "correct": true
+      },
+      {
+        "id": 13,
+        "text": "Laat de borstkas volledig terugveren na elke compressie. Houdt steeds contact met de",
+        "correct": true
+      },
+      {
+        "id": 14,
+        "text": "Geeft 30 borstcompressies aan een frequentie van 100-120x/min.",
+        "correct": true
+      },
+      {
+        "id": 15,
+        "text": "Geeft 2 beademingen. *",
+        "correct": true
+      },
+      {
+        "id": 16,
+        "text": "beademingen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "8. Benadering van een BEWUSTELOZE BABY die NIET NORMAAL ADEMT",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg. Plaatst het hoofd in een neutrale positie en tilt de kin omhoog.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Geeft eerst 5 initiële beademingen en alarmeert daarna de Noodcentrale 112 wanneer hij alleen is, of laat iemand de",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat iemand een AED halen.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Initiële",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Opent de luchtweg. Plaatst het hoofd in een neutrale positie en tilt de kin omhoog.",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "text": "Geeft in totaal 5 initiële beademingen: Haalt normaal adem en plaatst de mond volledig over de mond",
+        "correct": true
+      },
+      {
+        "id": 11,
+        "text": "Laat de borstkas volledig terugveren na elke compressie. Houdt steeds contact met de borstkas, ver-",
+        "correct": true
+      },
+      {
+        "id": 12,
+        "text": "Geeft 30 borstcompressies aan een frequentie van 100-120x/min.",
+        "correct": true
+      },
+      {
+        "id": 13,
+        "text": "Geeft 2 beademingen. *",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "9. Benadering van een slachtoffer met een (GESLOTEN) BLAAR",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat de blaar intact, als ze niet hinderlijk is. *",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Doorprikken",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Reinigt (met water of waterig, niet-verkleurend ontsmettingsmiddel) de blaar en de",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Reinigt (met water) of ontsmet (met een waterig, niet-verkleurend ontsmettingsmiddel)",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "10. Benadering van een slachtoffer met een (OPEN) BLAAR",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Reinigt (met water of waterig, niet-verkleurend ontsmettingsmiddel) de blaar en de omgeving ervan. *",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "11. Benadering van een slachtoffer met een BLAUWE NAGEL",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of koelzakje. Houdt het ijs niet",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "12. Benadering van een slachtoffer met een BLAUWE PLEK",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of koelzakje. Houdt het ijs niet",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "13. Benadering van een slachtoffer met een BLOEDNEUS",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Laat het slachtoffer zitten.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer de neus goed snuiten.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat het slachtoffer eventueel op een ijsklontje zuigen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "14. Benadering van een slachtoffer met een BOTBREUK",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Open",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getroffen ledemaat, in-",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Gesloten",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getroffen ledemaat, in-",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of koelzakje. Houdt het ijs",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "15. Benadering van een slachtoffer met een BRANDWONDE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Koelt de brandwonde zo snel mogelijk af met koel of lauw leidingwater. Koelt 10, bij voorkeur 20 minu-",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Handelt volgens de",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "16. Benadering van een slachtoffer met een CO-VERGIFTIGING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Opent de ramen en deuren (bij voorkeur) van buitenaf.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "17. Benadering van een slachtoffer met DIABETES",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer of iemand uit zijn omgeving zijn bloedsuikergehalte meten indien mogelijk",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "18. Benadering van een slachtoffer met een ELEKTRICITEITSONGEVAL: LAAG-",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid*",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp*",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "19. Benadering van een slachtoffer met een ELEKTRICITEITSONGEVAL: HOOG-",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid*",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp*",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat de redding van het slachtoffer over aan de hulpdiensten.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "20. Benadering van een slachtoffer met EPILEPSIE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "21. Benadering van een slachtoffer met een ERNSTIGE BLOEDING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "22. Benadering van een slachtoffer met een HARTAANVAL",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer zo rustig mogelijk blijven en geen inspanningen meer verrichten.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "23. Benadering van een slachtoffer met een HERSENLETSEL/HERSENSCHUDDING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig. Kantelt het hoofd niet achterover bij het",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer rusten.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Immobiliseert het hoofd indien het slachtoffer het hoofd en de nek niet zelf onbeweeglijk",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat het slachtoffer op de rug liggen.",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Laat een andere eerstehulpverlener een eventuele hoofdwonde verzorgen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "24. Benadering van een slachtoffer met HITTE- OF ZONNESLAG",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Koelt het slachtoffer onmiddellijk af. Hoe ernstiger de symptomen, hoe drastischer de",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Geeft het slachtoffer iets koels te drinken, als de symptomen het gevolg zijn van een hevige inspanning",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Geeft het slachtoffer geen koortswerende middelen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "25. Benadering van een slachtoffer met een HOOFDWONDE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig. Kantelt het hoofd niet naar achter bij",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat een losse huidflap op het hoofd liggen. *",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Koelt de buil maximum 20 minuten. *",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "26. Benadering van een slachtoffer met een HUIDWONDE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Reinigt de wonde met stromend water. *",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Reinigt de wonde met een waterig, niet-verkleurend ontsmettingsmiddel. *",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "27. Benadering van een slachtoffer met een HUIDWONDE met een VREEMD",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Laat het vreemde voorwerp ter plaatse. *",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Vreemd",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "28. Benadering van een slachtoffer met HYPERVENTILATIE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer in- en uitademen in zijn, tot een schelp gevouwen handen.",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat hem in- en uitademen in een proper zakje.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "29. Benadering van een slachtoffer met INSECTENSTEEK OF -BEET",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Reinigt het wondje (met water of waterig, niet-verkleurend ontsmettingsmiddel).",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of koelzakje. Houdt het ijs niet rechtstreeks tegen",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat het slachtoffer de mond koelen met koud water of met een ijsblokje/waterijsje bij een steek in de keelholte.",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat het slachtoffer een comfortabele houding aannemen wanneer hij ademhalingsmoeilijkheden heeft.",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Geeft zelf geen medicatie.",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "text": "Handelt volgens zijn waarnemingen als het slachtoffer algemene reacties buiten de eigenlijke steek- of beetplaats ver-",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "30. Benadering van een slachtoffer met een FLAUWTE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer nog even liggen als hij bijkomt. Laat hem geleidelijk aan rechtzitten, als het slacht-",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "31. Benadering van een slachtoffer met een",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getroffen ledemaat, indien",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of een koelzakje. Houdt het ijs",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "32. Benadering van een slachtoffer met KOORTSSTUIPEN",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat de ouders een koortswerend middel geven",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Geeft het kind geen eten of drinken.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "33. Benadering van een slachtoffer met KORTADEMIGHEID",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat hem geen inspanningen meer doen. Zorgt dat hij zo rustig mogelijk blijft.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "34. Benadering van een slachtoffer met ONDERKOELING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig, voldoende lang.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Rilt en is bij",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat hem opwarmen in een slaapzak, of een deken in combinatie met een isolatiede-",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat het slachtoffer warme, droge kleding aantrekken.",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Geeft hem warme, suikerrijke drank.",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "text": "Rilt niet en of",
+        "correct": true
+      },
+      {
+        "id": 11,
+        "text": "Warmt het slachtoffer actief op, bij voorkeur met een elektrisch deken. *",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "35. Benadering van een slachtoffer met een ONTWRICHTING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Open",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getrof-",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Gesloten ont-",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getrof-",
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of een koel-",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "36. Benadering van een slachtoffer met een SCHEDELBREUK",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig. Kantelt het hoofd niet achterover bij",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Immobiliseert het hoofd indien het slachtoffer het hoofd en de nek niet zelf onbe-",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat het slachtoffer op de rug liggen. *",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Handelt zoals bij een ernstige bloeding, als het slachtoffer een ernstig bloedende hoofdwonde heeft.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "37. Benadering van een slachtoffer met een SPIER- OF PEESSCHEUR",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getroffen ledemaat, indien",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of een koelzakje. Houdt het ijs",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "38. Benadering van een slachtoffer met een SPLINTER",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Reinigt de wonde en de omgeving ervan (met water of waterig, niet-verkleurend ontsmettingsmid-",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Reinigt het wondje (met water of waterig, niet-verkleurend ontsmettingsmiddel).",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "39. Benadering van een slachtoffer met TEKENBEET",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Reinigt het wondje met een waterig, niet-verkleurend ontsmettingsmiddel.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "40. Benadering van een slachtoffer van VERDRINKING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig. Kantelt het hoofd niet achterover bij",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Handelt zoals bij onderkoeling.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "41. Benadering van een slachtoffer met een VERGIFTIGING DOOR INSPUI-",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid*",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "42. Benadering van een slachtoffer met een VERGIFTIGING DOOR CONTACT",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid*",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp*",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Handelt in functie van de symptomen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "43. Benadering van een slachtoffer met een VERGIFTIGING DOOR INSLIKKEN",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid*",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "44. Benadering van een slachtoffer met een VERGIFTIGING DOOR INADE-",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid*",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Opent van buitenaf de ramen en deuren.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "45. Benadering van een slachtoffer met een VERSLIKKING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "46. Benadering van een slachtoffer met een VERSTUIKING",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat bij een verstuiking van de onderste ledematen de schoen ter plaatse. Laat het slachtoffer de",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer de meest comfortabele houding aannemen. Plaatst het getroffen ledemaat, indien",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Koelt het letsel maximaal 20 minuten met ijsblokjes in een zakje water of een koelzakje. Houdt het ijs",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "47. Benadering van een slachtoffer met een VREEMD VOORWERP IN DE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "48. Benadering van een slachtoffer met een VREEMD VOORWERP IN HET OOG",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Laat het slachtoffer ergens zitten waar voldoende licht is om het oog te bekijken.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp *",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat hem zijn bril afnemen of contactlenzen verwijderen als hij die draagt.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat het slachtoffer een comfortabele houding aannemen en het hoofd stilhouden.",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat het slachtoffer kompressen of een schone, droge doek voor beide ogen houden, indien mogelijk. *",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "49. Benadering van een slachtoffer met een VREEMD VOORWERP IN HET",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Laat het slachtoffer ergens zitten waar voldoende licht is om het oor te bekijken.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer een comfortabele houding aannemen en het hoofd stilhouden.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "50. Benadering van een slachtoffer met een VRIESWONDE",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Warmt het getroffen lichaamsdeel geleidelijk aan op, als hij zeker weet dat er geen gevaar is voor een",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat de handen of voeten in lauw tot warm water onderdompelen, als gespecialiseerde hulp niet bin-",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat het slachtoffer met vriesletsels aan de voeten niet op de voeten steunen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "51. Benadering van een slachtoffer met een VUILTJE IN HET OOG",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Laat het slachtoffer ergens zitten waar voldoende licht is om het oog te bekijken.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat hem zijn bril afnemen of contactlenzen verwijderen als hij die draagt.",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat hem het hoofd achterover kantelen.",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Laat water uit de kraan of uit een kan stromen en spoelt vanaf de neus naar de zij-",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "52. Benadering van een slachtoffer met een WERVELLETSEL",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Opent de luchtweg en controleert de ademhaling, indien nodig. Kantelt het hoofd niet achterover. *",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Immobiliseert het hoofd indien het slachtoffer het hoofd en de nek niet zelf onbe-",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "text": "Laat het slachtoffer op de rug liggen.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "53. Benadering van een slachtoffer met ZONNEBRAND",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Koelt de huid met natte doeken of een zachte douche. Vermijdt te koud water.*",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "Laat het slachtoffer een eenvoudige pijnstiller nemen, als hij pijn heeft.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "scenario": "54. Benadering van een slachtoffer met een SHOCK TEN GEVOLGE VAN EEN",
+    "steps": [
+      {
+        "id": 1,
+        "text": "Stap 1: Zorg voor veiligheid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Stap 2: Beoordeel de toestand van het slachtoffer",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Stap 3: Raadpleeg gespecialiseerde hulp",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "text": "Stap 4: Verleen verdere eerste hulp",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "Laat het slachtoffer rusten en geen inspanning doen.",
+        "correct": true
+      }
+    ]
+  }
+]
